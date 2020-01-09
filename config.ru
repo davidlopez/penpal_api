@@ -1,6 +1,6 @@
-require 'bundler'
-Bundler.require
+require './routes'
+require 'dotenv'
 
-require File.expand_path('../config/environment',  __FILE__)
+Dotenv.load
 
-run PenpalApi
+run Sinatra::Application
