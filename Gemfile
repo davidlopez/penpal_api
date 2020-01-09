@@ -9,10 +9,12 @@ gem 'puma'
 gem 'slim'
 gem 'faraday'
 gem 'fast_jsonapi'
-gem 'figaro'
+gem 'rspec'
+gem 'pry'
+gem 'json'
+gem 'dotenv'
 
 group :development, :test do
-	gem 'pry'
 	gem 'factory_bot'
 	gem 'faker'
 end
@@ -23,6 +25,5 @@ group :test do
 	gem 'simplecov'
 	gem 'webmock'
 	gem 'vcr'
-	gem 'rspec'
-	gem 'rspec-core'
+	gem 'rack-test'
 end
